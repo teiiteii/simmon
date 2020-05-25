@@ -23,8 +23,8 @@ function updateInfo(){
 	toClipboard()
 }
 function addBothUserNum(){
+    addUserNum(1)
 	addUserNum(0)
-	addUserNum(1)
 }
 function addUserNum(num){
 	if(num == 0){
