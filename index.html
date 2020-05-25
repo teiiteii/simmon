@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="ListDragDropSort.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type='text/javascript' src="./simmon.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center;"> <button id="user0" class="rule0_conf" type="button" onclick="addUserNum(0)"></button> vs <button id="user1" class="rule0_conf" type="button" onclick="addUserNum(1)"></button> <button id="user0" class="rule1_conf d-none" type="button" onclick="addBothUserNum()">試合終了</button>
+      <ul id="users"> </ul>
+      <p>参加者追加<br> <input type="text" id="txt_user_add" autocomplete="on" list="regular_list"><button type="button" name="aaa" value="aaa" onClick="addRow()">追加</button></p>
+      <p>戦績操作<br> <button type="button" onclick="initUserNum()">両方0に戻す</button><button type="button" onclick="addUserNum(0)">左に1追加</button><button type="button" onclick="addUserNum(1)">右に1追加</button> </p>
+      <p>ルール<br> <select id="rule" onchange="changeRule()">
+<option value="rule0">2連勝or負け抜け</option>
+<option value="rule1">2戦抜け</option>
+</select> </p>
+      <p>クリップボード<br> <textarea id="copyTarget" type="text"  style=" width:15rem; height:11rem;" readonly></textarea>
+    </p>
+    <div class="message"> コピー完了 </div> </div>
+  </div> <datalist id="regular_list">
+    <option value="しもん"></option>
+    <option value="りのあ"></option>
+    <option value="たるお"></option>
+    <option value="ぜろてん"></option>
+    <option value="父竜"></option>
+    <option value="Terisa"></option>
+    <option value="つっか"></option>
+    <option value="みらのあ"></option>
+    <option value="ねこポンズ"></option>
+    <option value="にわかゆっくり"></option>
+</datalist> </body>
+</html>

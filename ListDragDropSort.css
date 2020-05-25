@@ -1,0 +1,19 @@
+body, html {
+    background-color: #F0F0F0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+ul {
+  /*  margin: auto;
+    width: 40%;
+    text-align: center;*/
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    margin: 2px;
+    background-color: #dff8ff;
+    border: 2px solid #00a7d5;
+}
